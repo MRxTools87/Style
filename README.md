@@ -35,7 +35,8 @@ Install
 pkg update -y && pkg install curl -y
 curl -fsSL https://raw.githubusercontent.com/MRxTools87/Introvert/main/install.sh | bash
 
+#UNINSTALL
 
-Uninstall
+cara uninstall
 ```bash
 curl -fsSL https://raw.githubusercontent.com/MRxTools87/Introvert/main/uninstall.sh -o uninstall.sh; and bash uninstall.sh | bash
