@@ -43,5 +43,4 @@ curl -fsSL https://raw.githubusercontent.com/MRxTools87/Introvert/main/install.s
 
 #UNINSTALL
 cara uninstall
-```bash
 curl -fsSL https://raw.githubusercontent.com/MRxTools87/Introvert/main/uninstall.sh -o uninstall.sh; and bash uninstall.sh | bash
