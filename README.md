@@ -16,6 +16,12 @@
 
 Tema Fish Shell untuk Termux dengan gaya Cyber Cyan.
 
+#UNINSTALL
+cara uninstall
+```bash
+curl -fsSL https://raw.githubusercontent.com/MRxTools87/Introvert/main/uninstall.sh -o uninstall.sh; and bash uninstall.sh | bash
+
+
 ## ✨ Fitur
 - Prompt Cyber Cyan minimalis.
 - Greeting TermuxVoid.
@@ -34,13 +40,3 @@ Install
 ```bash
 pkg update -y && pkg install curl -y
 curl -fsSL https://raw.githubusercontent.com/MRxTools87/Introvert/main/install.sh | bash
-
-
-<p align="center">
-  Lightweight • Cyber Cyan • Minimalist
-</p>
-
-
-#UNINSTALL
-cara uninstall
-curl -fsSL https://raw.githubusercontent.com/MRxTools87/Introvert/main/uninstall.sh -o uninstall.sh; and bash uninstall.sh | bash
