@@ -38,4 +38,4 @@ Jalankan di Termux:
 Install
 ```bash
 pkg update -y && pkg install curl -y
-curl -fsSL https://raw.githubusercontent.com/MRxTools87/Introvert/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/MRxTools87/Style/main/install.sh | bash
