@@ -49,4 +49,5 @@ fi
 echo
 echo "[SUCCESS] MEMEKZ Ubuntu Powerline berhasil dipasang."
 echo "Backup konfigurasi lama: $BACKUP_DIR"
+echo "Font opsional: lihat folder fonts/README.md di repositori."
 echo "Tutup dan buka kembali Termux, atau jalankan: exec fish"

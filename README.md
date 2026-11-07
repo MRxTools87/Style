@@ -1,24 +1,26 @@
 # MEMEKZ Ubuntu Powerline — Termux
 
-Tema Fish + Starship bergaya Ubuntu Powerline untuk Termux.
+Tema Fish + Starship untuk Termux dengan tampilan Ubuntu Powerline.
 
-## Isi proyek
+## Fitur
 
-- `install.sh` — memasang Fish, Starship, konfigurasi greeting, helper, dan prompt.
-- `uninstall.sh` — menghapus konfigurasi MEMEKZ (tidak menghapus aplikasi Fish/Starship).
-- `config/introvert.fish` — greeting dan perintah bantuan `tv-*`.
-- `config/starship.toml` — prompt username, hostname, direktori, Git, dan simbol `➜›`.
+- Prompt MEMEKZ@JANDA dengan segmen warna ungu, oranye, dan biru.
+- Direktori dengan ikon folder, Git branch, dan status Git.
+- Simbol prompt `➜❯` berwarna biru muda.
+- Fish greeting dan helper `tv-help`, `tv-info`, `tv-ip`, `tv-update`, `tv-clean`.
+- Panduan Nerd Font opsional untuk memastikan ikon dan simbol tampil benar.
 
-## Cara memasang dari Termux
+## Struktur proyek
 
-Jika file proyek sudah berada di penyimpanan perangkat, masuk ke folder proyek lalu jalankan:
+- `install.sh` — memasang Fish, Starship, greeting, helper, dan prompt.
+- `uninstall.sh` — menghapus konfigurasi MEMEKZ (Fish dan Starship tidak dihapus).
+- `config/introvert.fish` — greeting dan helper Fish.
+- `config/starship.toml` — konfigurasi prompt.
+- `fonts/README.md` — rekomendasi dan panduan pemasangan font.
 
-```bash
-chmod +x install.sh
-bash install.sh
-```
+## Instalasi
 
-Atau setelah proyek diunggah ke GitHub, jalankan perintah berikut:
+Jalankan dari Termux:
 
 ```bash
 pkg install curl -y
@@ -27,17 +29,28 @@ chmod +x install.sh
 bash install.sh
 ```
 
-## Cara menghapus konfigurasi
+Setelah instalasi selesai, mulai ulang shell:
 
-```bash
-chmod +x uninstall.sh
-bash uninstall.sh
+```fish
+exec fish
 ```
+
+## Font (opsional, direkomendasikan)
+
+Gunakan **JetBrainsMono Nerd Font Mono** agar ikon folder ``, ikon Git, dan pemisah Powerline `` memiliki glyph yang sesuai.
+
+Panduan lengkap ada di [fonts/README.md](fonts/README.md). Font hanya menambah dukungan simbol; font tidak mengubah warna, susunan, teks, atau desain prompt.
 
 ## Catatan
 
-- Jalankan installer dari Termux.
-- Installer membuat cadangan konfigurasi yang ditemukan di `~/.config/memekz-backup-*`.
-- Fish dan Starship tidak dihapus oleh `uninstall.sh`.
-- Untuk mengganti identitas prompt, edit bagian `[username]` dan `[hostname]` pada `config/starship.toml`.
-- Warna simbol prompt saat ini biru.
+- Prompt Starship disimpan di `~/.config/starship.toml`.
+- Inisialisasi Starship untuk Fish berada di `~/.config/fish/conf.d/starship-init.fish`.
+- Installer membuat backup konfigurasi lama di `~/.config/memekz-backup-*`.
+- Jika ikon tampil sebagai kotak atau tanda tanya, pasang Nerd Font dan pilih font tersebut di pengaturan Termux.
+- Jangan mengedit konfigurasi prompt jika ingin mempertahankan desain bawaan MEMEKZ.
+
+## Uninstall
+
+```bash
+bash uninstall.sh
+```
