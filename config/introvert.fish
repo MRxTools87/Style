@@ -3,11 +3,11 @@
 
 function fish_greeting
     set_color brcyan
-    echo "╭──────────────────────────────────────────────╮"
+    echo "╭────────────────────────────────────────╮"
     set_color yellow
-    echo "│              MEMEKZ TERMINAL                 │"
+    echo "│              MEMEKZ TERMINAL           │"
     set_color brcyan
-    echo "╰──────────────────────────────────────────────╯"
+    echo "╰────────────────────────────────────────╯"
     set_color normal
     echo "Ketik tv-help untuk melihat perintah bantuan."
 end
