@@ -5,11 +5,11 @@ function fish_greeting
     set_color brcyan
     echo "╭────────────────────────────────────────╮"
     set_color yellow
-    echo "│              MEMEKZ TERMINAL           │"
+    echo "│           TERMUXTOOLS THEMA SIMPLE           │"
     set_color brcyan
     echo "╰────────────────────────────────────────╯"
     set_color normal
-    echo "Ketik tv-help untuk melihat perintah bantuan."
+    echo
 end
 
 function tv-help
