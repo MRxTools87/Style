@@ -5,9 +5,20 @@ function fish_greeting
     set_color brcyan
     echo "╭────────────────────────────────────────╮"
     set_color yellow
-    echo "│           TERMUXTOOLS THEMA SIMPLE           │"
+    echo "│           MEMEKZ TERMINAL PRO          │"
     set_color brcyan
     echo "╰────────────────────────────────────────╯"
+    set_color green
+    echo "  SYSTEM  : ANDROID / TERMUX"
+    echo "  SHELL   : FISH"
+    echo "  STATUS  : ONLINE"
+    set_color brblue
+    echo "  ──────────────────────────────────────"
+
+    set_color bryellow
+    echo -n "  DATE    : "
+    date "+%d-%m-%Y %H:%M:%S"
+
     set_color normal
     echo
 end
